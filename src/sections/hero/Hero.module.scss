@@ -1,0 +1,61 @@
+@import "mixin.scss";
+
+.hero_container {
+  width: 100%;
+  display: flex;
+}
+
+//Hero Content Section
+
+.hero_content {
+  width: 50%;
+  padding: 7rem 2.25rem 0 $mainVerticalPadding;
+}
+
+.heading_hero {
+  color: $blackTextHero;
+}
+
+//Hero Images Section
+
+.hero_images {
+  width: 50%;
+  position: relative;
+  padding-right: $mainVerticalPadding;
+  display: flex;
+  column-gap: 1.2rem;
+
+  & img {
+    width: 95%;
+  }
+
+  & div {
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__left {
+    justify-content: center;
+    & img {
+      transform: translateY(-15%);
+    }
+  }
+
+  &__right {
+    justify-content: space-between;
+  }
+
+  &::before {
+    content: "";
+    width: 87%;
+    aspect-ratio: 1;
+    background: $greenGradient;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 2.5rem;
+  }
+}

@@ -1,7 +1,7 @@
-import Logo from "img/Logo.svg";
+import Hero from "sections/hero/Hero";
 
 const Landing = () => {
-  return <img src={Logo} alt="Łappka" />;
+  return <Hero />;
 };
 
 export default Landing;

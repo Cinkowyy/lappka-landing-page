@@ -8,6 +8,7 @@ import safetyRing from "img/Icons/safety-ring-icon.svg";
 import eye from "img/Icons/eye-icon.svg";
 import location from "img/Icons/location-icon.svg";
 import emptyHeart from "img/Icons/empty-heart-icon.svg";
+import Lappka from "components/lappka/Lappka";
 
 interface IAspectCard {
   icon: string; //icon url
@@ -23,7 +24,7 @@ const aspectData: IAspectCard[] = [
   {
     icon: petHouse,
     paragraphText:
-      "Podstawowe informacje na jego temat wszystkich zwierzaków, jak np.: odległość do schroniska, w którym przebywa, gatunek, maść, wiek, płeć, status sterylizacji oraz informacje o usposobieniu zwierzęcia)",
+      "Podstawowe informacje na jego temat wszystkich zwierzaków, jak: odległość do schroniska, w którym przebywa, gatunek, maść, wiek, płeć, status sterylizacji oraz informacje o usposobieniu zwierzęcia",
   },
   {
     icon: share,
@@ -61,7 +62,7 @@ const Aspects = () => {
   return (
     <div className={styles.aspects_container}>
       <h2 className={`heading`}>
-        Dlaczego Ł<span className="green_text">app</span>ka?
+        Dlaczego <Lappka />?
       </h2>
       <div className={styles.content_container}>
         {aspectData.map((aspect) => {

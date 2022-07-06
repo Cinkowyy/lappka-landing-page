@@ -9,7 +9,7 @@
 
 .hero_content {
   width: 50%;
-  padding: 7rem 2.25rem 0 $mainVerticalPadding;
+  padding: 7rem 2.25rem 0 $mainHorizontalPadding;
 
   .hero_heading {
     color: $blackTextPrimary;
@@ -35,7 +35,7 @@
 .hero_images {
   width: 50%;
   position: relative;
-  padding-right: $mainVerticalPadding;
+  padding-right: $mainHorizontalPadding;
   display: flex;
   column-gap: 1.2rem;
 

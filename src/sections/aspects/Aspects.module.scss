@@ -2,14 +2,15 @@
 
 .aspects_container {
   width: 100%;
+  background-color: $innerBackground;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem $mainVerticalPadding 0 $mainVerticalPadding;
+  padding: 6.25rem $mainHorizontalPadding;
 }
 
 .content_container {
-  padding: 3.75rem 0;
+  padding-top: 3.75rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

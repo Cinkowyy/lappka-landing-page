@@ -1,4 +1,4 @@
-@import "mixin.scss";
+@import "variables.scss";
 
 .hero_container {
   width: 100%;
@@ -10,10 +10,24 @@
 .hero_content {
   width: 50%;
   padding: 7rem 2.25rem 0 $mainVerticalPadding;
-}
 
-.heading_hero {
-  color: $blackTextHero;
+  .hero_heading {
+    color: $blackTextPrimary;
+    letter-spacing: 1.425px;
+    line-height: 3rem;
+  }
+
+  .hero_paragraph {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.6px;
+    line-height: 1.75rem;
+  }
+
+  .buttons_wrapper {
+    display: flex;
+    column-gap: 1.25rem;
+  }
 }
 
 //Hero Images Section
@@ -40,7 +54,7 @@
   &__left {
     justify-content: center;
     & img {
-      transform: translateY(-15%);
+      transform: translateY(-7%);
     }
   }
 

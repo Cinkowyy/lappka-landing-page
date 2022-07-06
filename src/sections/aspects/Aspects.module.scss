@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.aspects_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem $mainVerticalPadding 0 $mainVerticalPadding;
+}
+
+.content_container {
+  padding: 3.75rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}

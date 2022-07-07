@@ -24,6 +24,7 @@
 
 .subscribe {
   width: 53%;
+  max-width: 35rem;
   .subscribe_text {
     font-weight: 300;
     font-size: 1.0625rem;
@@ -49,6 +50,7 @@
       background-color: transparent;
       border: none;
       outline: none;
+      font-family: "Ubuntu", sans-serif;
       color: $pureWhite;
 
       &::placeholder {
@@ -69,6 +71,7 @@
       text-align: center;
       color: $primary;
       white-space: nowrap;
+      font-family: "Ubuntu", sans-serif;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 .newsletter_container {
   width: 100%;
-  padding: 3rem $mainHorizontalPadding;
+  padding: 3rem $mainHorizontalPadding 0.5rem $mainHorizontalPadding;
   position: relative;
 
   &::before {

@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.footer {
+  width: 100%;
+  padding: 3rem $mainHorizontalPadding;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  .copyright {
+    justify-self: flex-start;
+  }
+
+  .copyright,
+  a {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: $darkGrayText;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .links {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-self: flex-end;
+  }
+}

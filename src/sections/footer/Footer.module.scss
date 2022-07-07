@@ -5,6 +5,7 @@
   padding: 3rem $mainHorizontalPadding;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4.5rem;
   align-items: center;
 
   .copyright {
@@ -21,6 +22,7 @@
 
   .logo {
     justify-self: center;
+    height: 100%;
   }
 
   .links {

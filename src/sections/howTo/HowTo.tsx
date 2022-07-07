@@ -1,13 +1,12 @@
 import styles from "./HowTo.module.scss";
 import phonesImage from "img/phones.png";
+import Heading from "components/heading/Heading";
 
 const HowTo = () => {
   return (
     <div className={styles.howTo_container}>
       <div className={styles.howTo_content}>
-        <h2 className={`heading ${styles.howTo_heading}`}>
-          Podaj swoją łapkę zwierzakom!
-        </h2>
+        <Heading>Podaj swoją łapkę zwierzakom!</Heading>
         <p className={`grey_paragraph ${styles.howTo_paragraph}`}>
           Misja, która przyświeca Łappce, związana jest z chęcią niesienia
           pomocy zwierzakom oraz całej społeczności, dla której losy bezbronnych
@@ -20,11 +19,10 @@ const HowTo = () => {
           dzięki wymianie informacji pomiędzy członkami społeczności. Dodatkowo,
           każdy użytkownik będzie mógł w niej prowadzić kartę zdrowia swojego
           ukochanego zwierzaka.
-          <br /> <br />
-          <span className={styles.paragraphBold}>
-            Razem możemy pomóc jeszcze większej ilości zwierząt <br /> w
+          <p className={styles.paragraphBold}>
+            Razem możemy pomóc jeszcze większej ilości zwierząt <br />w
             potrzebie!
-          </span>
+          </p>
         </p>
       </div>
       <div className={styles.howTo_image_container}>

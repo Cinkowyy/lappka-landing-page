@@ -3,6 +3,8 @@
 .heading {
   font-weight: 700;
   font-size: 2.375rem;
+  letter-spacing: 1.425px;
+  line-height: 3rem;
   color: $blackText;
 }
 
@@ -10,6 +12,6 @@
   color: $navyBlueText;
 }
 
-.primaryBlack {
+.primary {
   color: $blackTextPrimary;
 }

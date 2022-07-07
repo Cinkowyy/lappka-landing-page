@@ -9,9 +9,7 @@ const AboutCard: React.FC<IAbout> = ({ headingText, paragraphText }) => {
   return (
     <div className={styles.card}>
       <h2 className={styles.about_heading}>{headingText}</h2>
-      <p className={`grey_paragraph ${styles.about_paragraph}`}>
-        {paragraphText}
-      </p>
+      <p className={styles.about_paragraph}>{paragraphText}</p>
     </div>
   );
 };

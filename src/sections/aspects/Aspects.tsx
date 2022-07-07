@@ -9,6 +9,7 @@ import eye from "img/Icons/eye-icon.svg";
 import location from "img/Icons/location-icon.svg";
 import emptyHeart from "img/Icons/empty-heart-icon.svg";
 import Lappka from "components/lappka/Lappka";
+import Heading from "components/heading/Heading";
 
 interface IAspectCard {
   icon: string; //icon url
@@ -61,9 +62,9 @@ const aspectData: IAspectCard[] = [
 const Aspects = () => {
   return (
     <div className={styles.aspects_container}>
-      <h2 className={`heading`}>
+      <Heading>
         Dlaczego <Lappka />?
-      </h2>
+      </Heading>
       <div className={styles.content_container}>
         {aspectData.map((aspect) => {
           return (

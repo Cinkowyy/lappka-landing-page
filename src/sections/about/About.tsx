@@ -1,4 +1,5 @@
 import AboutCard from "components/aboutCard/AboutCard";
+import Heading from "components/heading/Heading";
 import styles from "./About.module.scss";
 
 interface IAboutCard {
@@ -32,7 +33,7 @@ const cardsContent: IAboutCard[] = [
 const About = () => {
   return (
     <div className={styles.about_container}>
-      <h2 className={`heading`}>O naszej aplikacji</h2>
+      <Heading>O naszej aplikacji</Heading>
       <div className={styles.content_container}>
         {cardsContent.map((card) => {
           return (

@@ -5,17 +5,18 @@ import phonePet from "img/hero-phone-pet.png";
 import logo from "img/logo.svg";
 import apple from "img/Icons/apple-icon.svg";
 import google from "img/Icons/google-icon.svg";
-import Button from "components/Button/Button";
+import Button from "components/button/Button";
 import Lappka from "components/lappka/Lappka";
+import Heading from "components/heading/Heading";
 
 const Hero = () => {
   return (
     <div className={styles.hero_container}>
       <div className={styles.hero_content}>
         <img src={logo} alt="Łappka" />
-        <h2 className={`heading ${styles.hero_heading}`}>
+        <Heading type="primary">
           <Lappka /> – pomóż zwierzakom za pomocą jednego kliknięcia!
-        </h2>
+        </Heading>
         <p className={`grey_paragraph ${styles.hero_paragraph}`}>
           Odpowiadamy na potrzeby bezbronnych zwierząt, ułatwiając ich adopcje
           oraz opiekowanie się nimi.

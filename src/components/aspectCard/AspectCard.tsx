@@ -9,9 +9,7 @@ const AspectCard: React.FC<IAspect> = ({ icon, paragraphText }) => {
   return (
     <div className={styles.card}>
       <img src={icon} alt="icon" />
-      <p className={`grey_paragraph ${styles.aspect_paragraph}`}>
-        {paragraphText}
-      </p>
+      <p className="grey_paragraph">{paragraphText}</p>
     </div>
   );
 };

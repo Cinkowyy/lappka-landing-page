@@ -1,7 +1,6 @@
 import styles from "./Slider.module.scss";
-import arrowLeft from "img/arrow-left.svg";
-import arrowRight from "img/arrow-right.svg";
 import OpinionCard from "components/opinionCard/OpinionCard";
+import { useState } from "react";
 
 interface IOpinionCard {
   author: string;
@@ -9,7 +8,7 @@ interface IOpinionCard {
   content: string;
 }
 
-const opinions: IOpinionCard[] = [
+const opinionsData: IOpinionCard[] = [
   {
     content:
       "Dzięki Łappce bardzo szybko odnalazłam moją ukochaną Calineczkę. Uciekła mi z domu nad ranem i nie mogłam jej dogonić. Zrozpaczona szybko udostępniłam wiadomość o tym w Łappce. Już wieczorem odezwał się do mnie inny użytkownik, mówiąc, że Calineczka jest u niego w ogrodzie. Jakieś 15 minut później już jechałyśmy razem do domu. Cudowna aplikacja!",
@@ -24,13 +23,33 @@ const opinions: IOpinionCard[] = [
   },
   {
     content:
-      "Dla mnie to fantastyczne aplikacja, bo znalazłam tam moją Jessy. To ok 8 miesięczna kicia, która przejechała się pod maską samochodu i była poparzona. Była też mocno wychudzona. Kiedy kicia trochę wydobrzała, zabrałam ją do domu. I mam cudowną, mruczącą przyjaciółkę 😊",
+      "Dla mnie to fantastyczna aplikacja, bo znalazłam tam moją Jessy. To ok 8 miesięczna kicia, która przejechała się pod maską samochodu i była poparzona. Była też mocno wychudzona. Kiedy kicia trochę wydobrzała, zabrałam ją do domu. I mam cudowną, mruczącą przyjaciółkę 😊",
     author: "Joanna",
     age: "23 lata",
   },
 ];
 
 const Slider = () => {
+  const [opinions, setOpinions] = useState<IOpinionCard[]>(opinionsData);
+
+  const handleNextCard = () => {
+    let newOpinions = [...opinions];
+    const first = newOpinions[0];
+    newOpinions.shift();
+    newOpinions.push(first);
+
+    setOpinions(newOpinions);
+  };
+
+  const handlePrevCard = () => {
+    let newOpinions = [...opinions];
+    const last = newOpinions[newOpinions.length - 1];
+    newOpinions.pop();
+    newOpinions.unshift(last);
+
+    setOpinions(newOpinions);
+  };
+
   return (
     <div className={styles.slider}>
       <div className={styles.opinions_container}>
@@ -46,8 +65,14 @@ const Slider = () => {
         })}
       </div>
       <div className={styles.arrows}>
-        <img src={arrowLeft} alt="prev" />
-        <img src={arrowRight} alt="next" />
+        <div
+          className={`${styles.arrow_left} ${styles.active_arrow}`}
+          onClick={() => handlePrevCard()}
+        ></div>
+        <div
+          className={`${styles.arrow_right} ${styles.active_arrow}`}
+          onClick={() => handleNextCard()}
+        ></div>
       </div>
     </div>
   );

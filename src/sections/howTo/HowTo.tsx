@@ -19,10 +19,10 @@ const HowTo = () => {
           dzięki wymianie informacji pomiędzy członkami społeczności. Dodatkowo,
           każdy użytkownik będzie mógł w niej prowadzić kartę zdrowia swojego
           ukochanego zwierzaka.
-          <p className={styles.paragraphBold}>
+          <span className={styles.paragraphBold}>
             Razem możemy pomóc jeszcze większej ilości zwierząt <br />w
             potrzebie!
-          </p>
+          </span>
         </p>
       </div>
       <div className={styles.howTo_image_container}>

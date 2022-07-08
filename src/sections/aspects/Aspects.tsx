@@ -66,9 +66,10 @@ const Aspects = () => {
         Dlaczego <Lappka />?
       </Heading>
       <div className={styles.content_container}>
-        {aspectData.map((aspect) => {
+        {aspectData.map((aspect, index) => {
           return (
             <AspectCard
+              key={index}
               icon={aspect.icon}
               paragraphText={aspect.paragraphText}
             />

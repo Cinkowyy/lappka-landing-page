@@ -35,9 +35,10 @@ const About = () => {
     <div className={styles.about_container}>
       <Heading>O naszej aplikacji</Heading>
       <div className={styles.content_container}>
-        {cardsContent.map((card) => {
+        {cardsContent.map((card, index) => {
           return (
             <AboutCard
+              key={index}
               headingText={card.headingText}
               paragraphText={card.paragraphText}
             />

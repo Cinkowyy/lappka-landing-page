@@ -16,10 +16,10 @@ const Newsletter = () => {
         <div className={styles.input_wrapper}>
           <input
             type="text"
-            placeholder="Enter your email"
+            placeholder="Wpisz swój email"
             className={styles.subscribe_input}
           />
-          <button className={styles.subscribe_button}>Subscribe Now</button>
+          <button className={styles.subscribe_button}>Subskrybuj</button>
         </div>
       </div>
     </div>

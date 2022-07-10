@@ -40,7 +40,6 @@ const Slider = () => {
     
     
     currentCard.current += 1;
-    console.log(currentCard.current)
     const newOpinions = opinionsData.filter((opinion, index) => {
       return index>=currentCard.current-1
     })
@@ -52,7 +51,6 @@ const Slider = () => {
     if(currentCard.current<= 1) return
     
     currentCard.current -= 1;
-    console.log(currentCard.current)
     const newOpinions = opinionsData.filter((opinion, index) => {
       return index>=currentCard.current-1
     })

@@ -20,7 +20,7 @@ const HowTo = () => {
           każdy użytkownik będzie mógł w niej prowadzić kartę zdrowia swojego
           ukochanego zwierzaka.
           <span className={styles.paragraphBold}>
-            Razem możemy pomóc jeszcze większej ilości zwierząt <br />w
+            Razem możemy pomóc jeszcze większej ilości zwierząt w
             potrzebie!
           </span>
         </p>

@@ -46,3 +46,25 @@
     color: $grayText;
   }
 }
+
+@media screen and (max-width:1200px) {
+  .opinion {
+    padding: 0 3.5rem 2.2rem 3.5rem;
+
+    .content {
+      padding-top: 1.7rem;
+    }
+  
+    .author {
+      margin: 1.7rem 0 0.7rem 0;
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 1.25rem;
+    }
+  
+    .author_age {
+      font-size: .9rem;
+      line-height: 1rem;
+    }
+  }
+}

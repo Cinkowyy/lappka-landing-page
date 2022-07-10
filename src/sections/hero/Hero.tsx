@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className={styles.hero_container}>
       <div className={styles.hero_content}>
-        <img src={logo} alt="Łappka" />
+        <img src={logo} alt="Łappka" className={styles.logo}/>
         <Heading type="primary">
           <Lappka /> – pomóż zwierzakom za pomocą jednego kliknięcia!
         </Heading>

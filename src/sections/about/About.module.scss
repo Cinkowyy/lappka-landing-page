@@ -16,3 +16,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
+@media screen and (max-width: 1100px) {
+  .about_container {
+    padding: 2.5rem 6% $mainVerticalPadding 6%;
+  }
+}

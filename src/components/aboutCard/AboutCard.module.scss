@@ -38,3 +38,24 @@ $iconSize: 1.5rem;
     font-weight: 400;
   }
 }
+
+
+@media screen and (max-width: 1320px) {
+  .card {
+    padding: 1.7rem 0.5rem 1.7rem 3.75rem;
+    .about_heading {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+
+      &::before {
+        left: calc(-#{$iconSize} * 1.8 * 0.9);
+        width: calc(#{$iconSize}* 0.9);
+        height: calc(#{$iconSize}*0.9);
+      }
+    }
+
+    .about_paragraph {
+      font-size: .9rem;
+    }
+  }
+}

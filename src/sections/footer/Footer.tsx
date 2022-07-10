@@ -4,7 +4,7 @@ import logo from "img/logo.svg";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <p className={styles.copyright}>© 2021 All rights reserved.</p>
+      <p className={styles.copyright}>© 2021 Wszystkie prawa zastrzeżone.</p>
       <img src={logo} alt="Łappka" className={styles.logo} />
       <div className={styles.links}>
         <a href="/">Regulamin</a>

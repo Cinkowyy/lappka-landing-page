@@ -1,6 +1,6 @@
 import styles from "./Slider.module.scss";
 import OpinionCard from "components/opinionCard/OpinionCard";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 interface IOpinionCard {
   author: string;
@@ -29,24 +29,36 @@ const opinionsData: IOpinionCard[] = [
   },
 ];
 
+const dataLength:number = opinionsData.length;
+
 const Slider = () => {
+  const currentCard = useRef(1)
   const [opinions, setOpinions] = useState<IOpinionCard[]>(opinionsData);
 
   const handleNextCard = () => {
-    let newOpinions = [...opinions];
-    const first = newOpinions[0];
-    newOpinions.shift();
-    newOpinions.push(first);
-
+    if(currentCard.current>=dataLength) return
+    
+    
+    currentCard.current += 1;
+    console.log(currentCard.current)
+    const newOpinions = opinionsData.filter((opinion, index) => {
+      return index>=currentCard.current-1
+    })
+    
     setOpinions(newOpinions);
   };
 
   const handlePrevCard = () => {
-    let newOpinions = [...opinions];
-    const last = newOpinions[newOpinions.length - 1];
-    newOpinions.pop();
-    newOpinions.unshift(last);
+    if(currentCard.current<= 1) return
+    
+    currentCard.current -= 1;
+    console.log(currentCard.current)
+    const newOpinions = opinionsData.filter((opinion, index) => {
+      return index>=currentCard.current-1
+    })
 
+    
+    
     setOpinions(newOpinions);
   };
 
@@ -66,11 +78,11 @@ const Slider = () => {
       </div>
       <div className={styles.arrows}>
         <div
-          className={`${styles.arrow_left} ${styles.active_arrow}`}
+          className={`${styles.arrow_left} ${currentCard.current>1?styles.active_arrow:null}`}
           onClick={() => handlePrevCard()}
         ></div>
         <div
-          className={`${styles.arrow_right} ${styles.active_arrow}`}
+          className={`${styles.arrow_right} ${currentCard.current<dataLength?styles.active_arrow:null}`}
           onClick={() => handleNextCard()}
         ></div>
       </div>

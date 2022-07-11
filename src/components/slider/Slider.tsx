@@ -29,37 +29,33 @@ const opinionsData: IOpinionCard[] = [
   },
 ];
 
-const dataLength:number = opinionsData.length;
-let currentCard:number  = 1;
+const dataLength: number = opinionsData.length;
+let currentCard: number = 1;
 
-console.log("I rerendered")
+console.log("I rerendered");
 
 const Slider = () => {
-  
   const [opinions, setOpinions] = useState<IOpinionCard[]>(opinionsData);
 
   const handleNextCard = () => {
-    if(currentCard>=dataLength) return
-    
-    
+    if (currentCard >= dataLength) return;
+
     currentCard += 1;
     const newOpinions = opinionsData.filter((opinion, index) => {
-      return index>=currentCard-1
-    })
-    
+      return index >= currentCard - 1;
+    });
+
     setOpinions(newOpinions);
   };
 
   const handlePrevCard = () => {
-    if(currentCard<= 1) return
-    
-    currentCard-= 1;
-    const newOpinions = opinionsData.filter((opinion, index) => {
-      return index>=currentCard-1
-    })
+    if (currentCard <= 1) return;
 
-    
-    
+    currentCard -= 1;
+    const newOpinions = opinionsData.filter((opinion, index) => {
+      return index >= currentCard - 1;
+    });
+
     setOpinions(newOpinions);
   };
 
@@ -78,14 +74,20 @@ const Slider = () => {
         })}
       </div>
       <div className={styles.arrows}>
-        <div
-          className={`${styles.arrow} ${styles.arrow_left} ${currentCard>1?styles.active_arrow:null}`}
-          onClick={() => handlePrevCard()}
-        ></div>
-        <div
-          className={`${styles.arrow} ${styles.arrow_right} ${currentCard<dataLength?styles.active_arrow:null}`}
-          onClick={() => handleNextCard()}
-        ></div>
+        <button onClick={() => handlePrevCard()}>
+          <div
+            className={`${styles.arrow} ${styles.arrow_left} ${
+              currentCard > 1 ? styles.active_arrow : null
+            }`}
+          ></div>
+        </button>
+        <button onClick={() => handleNextCard()}>
+          <div
+            className={`${styles.arrow} ${styles.arrow_right} ${
+              currentCard < dataLength ? styles.active_arrow : null
+            }`}
+          ></div>
+        </button>
       </div>
     </div>
   );

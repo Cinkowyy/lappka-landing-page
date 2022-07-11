@@ -36,19 +36,26 @@
   }
 }
 
-
 .arrows {
   display: flex;
   align-items: center;
   column-gap: 1.75rem;
 
-  div {
+  button {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .arrow {
     width: 32px;
     height: 2px;
     background-color: rgba($color: #000000, $alpha: 0.3);
     position: relative;
     transition: scale 0.2s ease-in-out;
-    cursor: pointer;
   }
 
   .arrow {

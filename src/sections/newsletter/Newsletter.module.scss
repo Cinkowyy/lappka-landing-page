@@ -36,3 +36,9 @@
     padding: 3rem $mainHorizontalPadding 0.5rem $mainHorizontalPadding;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .newsletter_container {
+    padding: 3rem 4% 0.5rem 4%;
+  }
+}

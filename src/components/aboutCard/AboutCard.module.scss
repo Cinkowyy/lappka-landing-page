@@ -117,3 +117,22 @@ $iconSize: 1.5rem;
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .card {
+    .about_heading {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+
+      &::before {
+        left: calc(-#{$iconSize} * 1.8);
+        width: $iconSize;
+        height: $iconSize;
+      }
+    }
+
+    .about_paragraph {
+      font-size: 0.95rem;
+    }
+  }
+}

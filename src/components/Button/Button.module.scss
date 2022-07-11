@@ -72,6 +72,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .button {
+    padding: 0.8rem 1.1rem;
+  }
   .text_small {
     font-size: 1rem;
     line-height: 0.95rem;
@@ -80,5 +83,32 @@
   .text_big {
     font-size: 1.15rem;
     line-height: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text_small {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+
+  .text_big {
+    font-size: 1.06rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .button {
+    padding: 0.7rem 0.8rem;
+  }
+  .text_small {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+
+  .text_big {
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }

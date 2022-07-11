@@ -32,3 +32,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .about_container {
+    padding: 2.5rem 4% calc(#{$mainVerticalPadding}/ 2) 4%;
+  }
+}

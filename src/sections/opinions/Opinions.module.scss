@@ -9,3 +9,9 @@
   padding: 8.5rem 0 1.5rem 0;
   background-color: $innerBackground;
 }
+
+@media screen and (max-width: 480px) {
+  .opinions_container {
+    padding: calc(#{$mainVerticalPadding}/ 2) 0 1.5rem 0;
+  }
+}

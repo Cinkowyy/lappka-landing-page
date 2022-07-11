@@ -50,5 +50,12 @@
   .howTo_content,
   .howTo_image_container {
     width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .howTo_container {
+    padding: calc(#{$mainVerticalPadding}/ 2) 4%;
   }
 }

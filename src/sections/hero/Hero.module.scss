@@ -128,7 +128,7 @@
   .hero_content,
   .hero_images {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 $mainHorizontalPadding;
   }
 
   .hero_content {
@@ -174,6 +174,59 @@
   .hero_images {
     img {
       width: 180px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero_container {
+    padding-top: 1.6rem;
+  }
+  .hero_content,
+  .hero_images {
+    padding: 0 4%;
+  }
+
+  .hero_content {
+    .hero_paragraph {
+      margin-top: 1.1rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .hero_images {
+    img {
+      width: 150px;
+    }
+
+    &::before {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero_container {
+    padding-top: 1.2rem;
+  }
+
+  .hero_content {
+    .hero_paragraph {
+      margin-top: 0.9rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  .hero_images {
+    div {
+      align-items: center;
+    }
+    img {
+      width: 130px;
+    }
+
+    &::before {
+      width: 80%;
     }
   }
 }

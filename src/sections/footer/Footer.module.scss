@@ -89,3 +89,29 @@
     padding: 1.5rem 6%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 1.2rem 4%;
+
+    .copyright,
+    a {
+      font-size: 1.1rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    grid-template-rows: 1fr repeat(2, 0.5fr);
+    padding: 0.6rem 4%;
+    .logo {
+      height: 60%;
+    }
+    .copyright,
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}

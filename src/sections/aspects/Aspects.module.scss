@@ -32,3 +32,9 @@
     gap: 3rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .aspects_container {
+    padding: calc(#{$mainVerticalPadding}/ 2) 4%;
+  }
+}

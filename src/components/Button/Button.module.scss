@@ -28,15 +28,29 @@
   line-height: 1.5rem;
 }
 
-@media  screen and (max-width: 1160px) {
+@media screen and (max-width: 1160px) {
   .text_small {
     font-size: 0.65rem;
-    line-height: .9rem;
+    line-height: 0.9rem;
   }
-  
+
   .text_big {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.25rem;
   }
-  
+}
+
+@media screen and (max-width: 992px) {
+  .button {
+    padding: 0.5rem 1.1rem;
+  }
+  .text_small {
+    font-size: 0.6rem;
+    line-height: 0.85rem;
+  }
+
+  .text_big {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
 }

@@ -23,7 +23,6 @@
   }
 }
 
-
 .subscribe {
   width: 53%;
   max-width: 35rem;
@@ -80,7 +79,7 @@
 
 @media screen and (max-width: 1320px) {
   .newsletter_card .newsletter_text {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 
   .subscribe {
@@ -89,10 +88,10 @@
     }
 
     .input_wrapper {
-      padding: .3rem;
+      padding: 0.3rem;
 
       .subscribe_button {
-        font-size: .95rem;
+        font-size: 0.95rem;
         padding: 1.1rem 2.25rem;
       }
     }
@@ -110,15 +109,62 @@
 
   .subscribe {
     .subscribe_text {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
     .input_wrapper {
-      padding: .2rem;
+      padding: 0.2rem;
 
       .subscribe_button {
-        font-size: .9rem;
+        font-size: 0.9rem;
         padding: 1.1rem 2.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter_card {
+    padding: 3rem;
+
+    .newsletter_text {
+      font-size: 0.9rem;
+    }
+  }
+
+  .subscribe {
+    .subscribe_text {
+      font-size: 0.8rem;
+    }
+
+    .input_wrapper {
+      .subscribe_input {
+        font-size: 0.85rem;
+      }
+      .subscribe_button {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .newsletter_card {
+    padding: 2.5rem;
+
+    .newsletter_text {
+      font-size: 0.8rem;
+    }
+  }
+
+  .subscribe {
+    .subscribe_text {
+      font-size: 0.75rem;
+    }
+
+    .input_wrapper {
+      .subscribe_button {
+        font-size: 0.8rem;
       }
     }
   }

@@ -16,21 +16,23 @@
   color: $blackTextPrimary;
 }
 
-@media  screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1200px) {
   .heading {
     font-size: 2rem;
     line-height: 2.7rem;
   }
-  
 }
 
-@media  screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1024px) {
   .heading {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
   }
-  
 }
 
+@media screen and (max-width: 860px) {
+  .heading {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+}

@@ -22,3 +22,13 @@
     padding: $mainVerticalPadding 6%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .aspects_container {
+    padding: $mainVerticalPadding $mainHorizontalPadding;
+  }
+  .content_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

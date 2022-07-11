@@ -22,3 +22,13 @@
     padding: 2.5rem 6% $mainVerticalPadding 6%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .about_container {
+    padding: 2.5rem $mainHorizontalPadding $mainVerticalPadding
+      $mainHorizontalPadding;
+  }
+  .content_container {
+    grid-template-columns: 1fr;
+  }
+}

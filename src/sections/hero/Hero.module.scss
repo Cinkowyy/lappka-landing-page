@@ -118,3 +118,39 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .hero_container {
+    flex-direction: column;
+    row-gap: 3.5rem;
+    padding-top: 2.5rem;
+  }
+  .hero_content,
+  .hero_images {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .hero_content {
+    .hero_paragraph {
+      margin-top: 1.25rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .hero_images {
+    column-gap: 0;
+    img {
+      width: 220px;
+    }
+
+    div {
+      align-items: flex-end;
+    }
+
+    &::before {
+      width: 65%;
+      border-top-left-radius: 2.5rem;
+    }
+  }
+}

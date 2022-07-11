@@ -97,3 +97,23 @@ $iconSize: 1.5rem;
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 2rem 1.5rem 1.5rem 3.75rem;
+    .about_heading {
+      font-size: 1.3rem;
+      line-height: 1.625rem;
+
+      &::before {
+        left: calc(-#{$iconSize} * 1.8);
+        width: $iconSize;
+        height: $iconSize;
+      }
+    }
+
+    .about_paragraph {
+      font-size: 1.1rem;
+    }
+  }
+}

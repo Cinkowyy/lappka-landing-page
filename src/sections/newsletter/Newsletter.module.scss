@@ -20,15 +20,19 @@
 }
 
 @media screen and (max-width: 1320px) {
-  
   .newsletter_container::before {
     background-position: center;
   }
-  
 }
 
 @media screen and (max-width: 1100px) {
   .newsletter_container {
     padding: 3rem 6% 0.5rem 6%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletter_container {
+    padding: 3rem $mainHorizontalPadding 0.5rem $mainHorizontalPadding;
   }
 }

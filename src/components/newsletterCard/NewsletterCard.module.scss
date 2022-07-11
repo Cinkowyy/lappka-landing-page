@@ -169,3 +169,42 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .newsletter_card {
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    .newsletter_text {
+      width: 100%;
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .subscribe {
+    width: 100%;
+    max-width: 100%;
+    .subscribe_text {
+      font-size: 1.0625rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .input_wrapper {
+      padding: 0.5rem;
+
+      .subscribe_input {
+        padding: 1.25rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.125rem;
+      }
+
+      .subscribe_button {
+        padding: 1.25rem 2.5rem;
+        font-size: 1rem;
+        line-height: 1.125rem;
+      }
+    }
+  }
+}

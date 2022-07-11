@@ -51,3 +51,9 @@ a {
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .grey_paragraph {
+    font-size: 1.3em;
+  }
+}

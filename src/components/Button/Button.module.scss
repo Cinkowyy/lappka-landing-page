@@ -54,3 +54,19 @@
     line-height: 1.1rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .button {
+    padding: 1rem 1.5rem;
+  }
+
+  .text_small {
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
+
+  .text_big {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}

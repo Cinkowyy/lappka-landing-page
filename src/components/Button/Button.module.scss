@@ -70,3 +70,15 @@
     line-height: 1.5rem;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .text_small {
+    font-size: 1rem;
+    line-height: 0.95rem;
+  }
+
+  .text_big {
+    font-size: 1.15rem;
+    line-height: 1.35rem;
+  }
+}

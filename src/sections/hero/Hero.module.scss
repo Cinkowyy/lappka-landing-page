@@ -154,3 +154,26 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .hero_container {
+    padding-top: 2rem;
+  }
+  .hero_content,
+  .hero_images {
+    padding: 0 6%;
+  }
+
+  .hero_content {
+    .hero_paragraph {
+      margin-top: 1.15rem;
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  .hero_images {
+    img {
+      width: 180px;
+    }
+  }
+}

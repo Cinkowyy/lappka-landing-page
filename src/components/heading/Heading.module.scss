@@ -43,3 +43,10 @@
     line-height: 3rem;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+}

@@ -74,6 +74,7 @@
 
     .content {
       padding-top: 1.7rem;
+      font-size: 1.1rem;
     }
 
     .author {
@@ -85,6 +86,22 @@
     .author_age {
       font-size: 0.9rem;
       line-height: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .opinion {
+    .content {
+      font-size: 0.9rem;
+    }
+
+    .author {
+      font-size: 1rem;
+    }
+
+    .author_age {
+      font-size: 0.85rem;
     }
   }
 }

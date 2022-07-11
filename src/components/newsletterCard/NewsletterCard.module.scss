@@ -208,3 +208,20 @@
     }
   }
 }
+
+@media screen and (max-width: 660px) {
+  .newsletter_card {
+    padding: 2rem;
+    .newsletter_text {
+      font-size: 1.1rem;
+      line-height: 1.6em;
+    }
+  }
+
+  .subscribe {
+    .subscribe_text {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+}

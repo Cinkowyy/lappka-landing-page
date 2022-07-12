@@ -4,6 +4,59 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: transform 0.4s ease-in-out;
+  transition: opacity 0.3 ease-in-out 0.1s;
+
+  &.prevCard {
+    animation-name: activeFadeOut;
+    animation-duration: 0.4s;
+    z-index: 4;
+    animation-fill-mode: forwards;
+  }
+
+  &.nextCard {
+    visibility: hidden;
+    transform: translateY(25%) scale(0.75);
+    opacity: 0;
+  }
+
+  &.active {
+    z-index: 3;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  &.second {
+    transform: translateY(10%) scale(0.9);
+    z-index: 2;
+  }
+
+  &.third {
+    transform: translateY(20%) scale(0.8);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+@keyframes activeFadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+    transform: translate(-40%, -25%) scale(1.1);
+  }
+
+  100% {
+    visibility: hidden;
+  }
 }
 
 .opinion {
@@ -32,7 +85,7 @@
   }
 
   .author {
-    margin: 2rem 0 0.5rem 0;
+    margin: 1.7rem 0 0.5rem 0;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.5rem;

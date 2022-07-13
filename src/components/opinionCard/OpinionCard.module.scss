@@ -1,22 +1,23 @@
 @import "variables.scss";
 
+$transition-time: 0.4s;
+
 .card {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 0.4s ease-in-out;
-  transition: opacity 0.3 ease-in-out 0.1s;
+  transition: transform $transition-time ease-in-out;
 
   &.prevCard {
     animation-name: activeFadeOut;
-    animation-duration: 0.4s;
+    animation-duration: $transition-time;
     z-index: 5;
     animation-fill-mode: forwards;
   }
 
   &.nextCard {
     animation-name: thirdFadeOut;
-    animation-duration: 0.4s;
+    animation-duration: $transition-time;
     animation-fill-mode: forwards;
     z-index: 1;
   }
@@ -25,6 +26,13 @@
     z-index: 4;
     opacity: 1;
     transform: translateY(0) scale(1);
+
+    &.prev {
+      animation-name: activeFadeIn;
+      animation-duration: $transition-time;
+      z-index: 5;
+      animation-fill-mode: backwards;
+    }
   }
 
   &.second {
@@ -60,6 +68,26 @@
   }
 }
 
+@keyframes activeFadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-40%, -25%) scale(1.1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  99% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
 @keyframes thirdFadeOut {
   0% {
     visibility: visible;
@@ -74,7 +102,7 @@
 
   99% {
     opacity: 0;
-    transform: translate(20%, 35%) scale(0.6);
+    transform: translate(0, 25%) scale(0.75);
   }
 
   100% {

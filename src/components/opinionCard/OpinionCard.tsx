@@ -7,6 +7,7 @@ interface IOpinionCard {
   age: string;
   content: string;
   order: number;
+  slideDirection: "left" | "right";
 }
 
 const OpinionCard: React.FC<IOpinionCard> = ({
@@ -14,14 +15,17 @@ const OpinionCard: React.FC<IOpinionCard> = ({
   author,
   age,
   order,
+  slideDirection,
 }) => {
   return (
     <div
       className={`${styles.card} ${order === 0 ? styles.active : ""} ${
-        order === -1 ? styles.second : ""
-      } ${order === -2 ? styles.third : ""} ${
-        order > 0 ? styles.prevCard : ""
-      } ${order < -2 ? styles.nextCard : ""}`}
+        order === 0 && slideDirection === "left" ? styles.prev : ""
+      } ${order === -1 ? styles.second : ""} ${
+        order === -2 ? styles.third : ""
+      } ${order > 0 ? styles.prevCard : ""} ${
+        order < -2 ? styles.nextCard : ""
+      }`}
     >
       <div className={styles.opinion}>
         <img src={quote} alt="" />

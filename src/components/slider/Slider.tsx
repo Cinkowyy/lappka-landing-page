@@ -49,17 +49,22 @@ const opinionsData: IOpinionCard[] = [
 
 const Slider = () => {
   const [currentCard, setCurrentCard] = useState(0);
+  const [slideDirection, setSlideDirection] = useState<"left" | "right">(
+    "right"
+  );
   const dataLength = opinionsData.length;
 
   const handleNextCard = () => {
     if (currentCard >= dataLength - 1) return;
 
+    setSlideDirection("right");
     setCurrentCard((prevCard) => prevCard + 1);
   };
 
   const handlePrevCard = () => {
     if (currentCard <= 0) return;
 
+    setSlideDirection("left");
     setCurrentCard((prevCard) => prevCard - 1);
   };
 
@@ -74,6 +79,7 @@ const Slider = () => {
               author={opinion.author}
               age={opinion.age}
               order={currentCard - index}
+              slideDirection={slideDirection}
             />
           );
         })}

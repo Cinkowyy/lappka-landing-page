@@ -8,10 +8,97 @@
   row-gap: 4.5rem;
   padding: 8.5rem 0 1.5rem 0;
   background-color: $innerBackground;
+  position: relative;
+
+  .avatar {
+    position: absolute;
+
+    &.left_bottom {
+      bottom: 15%;
+      left: 6%;
+    }
+
+    &.right_bottom {
+      bottom: 5%;
+      right: 5%;
+    }
+
+    &.left_top {
+      top: 25%;
+      left: 8%;
+      width: 150px;
+    }
+
+    &.right_top {
+      width: 120px;
+      top: 27%;
+      right: 12%;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
   .opinions_container {
     padding: calc(#{$mainVerticalPadding}/ 2) 0 1.5rem 0;
+  }
+}
+
+//avatars
+
+@media screen and (min-width: 1600px) {
+  .opinions_container .avatar {
+    &.left_bottom {
+      bottom: 15%;
+      left: 8%;
+    }
+
+    &.right_bottom {
+      bottom: 5%;
+      right: 7%;
+    }
+
+    &.left_top {
+      top: 25%;
+      left: 11%;
+      width: 170px;
+    }
+
+    &.right_top {
+      width: 150px;
+      top: 27%;
+      right: 14%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .opinions_container .avatar {
+    &.left_bottom {
+      bottom: 15%;
+      left: 4%;
+    }
+
+    &.right_bottom {
+      bottom: 5%;
+      right: 4%;
+    }
+
+    &.left_top {
+      top: 25%;
+      left: 7%;
+      width: 130px;
+    }
+
+    &.right_top {
+      width: 120px;
+      top: 27%;
+      right: 9%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .opinions_container .avatar {
+    display: none;
   }
 }

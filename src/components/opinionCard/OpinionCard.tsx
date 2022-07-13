@@ -1,6 +1,7 @@
 import styles from "./OpinionCard.module.scss";
 import quote from "img/quote.svg";
 import React from "react";
+import classNames from "classnames";
 
 interface IOpinionCard {
   author: string;
@@ -17,16 +18,18 @@ const OpinionCard: React.FC<IOpinionCard> = ({
   order,
   slideDirection,
 }) => {
+  let cardClasses = classNames({
+    [styles.card]: true,
+    [styles.active]: order === 0 ? true : false,
+    [styles.left]: order === 0 && slideDirection === "left" ? true : false,
+    [styles.second]: order === -1 ? true : false,
+    [styles.third]: order === -2 ? true : false,
+    [styles.prevCard]: order > 0 ? true : false,
+    [styles.nextCard]: order < -2 ? true : false,
+  });
+
   return (
-    <div
-      className={`${styles.card} ${order === 0 ? styles.active : ""} ${
-        order === 0 && slideDirection === "left" ? styles.prev : ""
-      } ${order === -1 ? styles.second : ""} ${
-        order === -2 ? styles.third : ""
-      } ${order > 0 ? styles.prevCard : ""} ${
-        order < -2 ? styles.nextCard : ""
-      }`}
-    >
+    <div className={cardClasses}>
       <div className={styles.opinion}>
         <img src={quote} alt="" />
         <p className={`grey_paragraph ${styles.content}`}>{content}</p>

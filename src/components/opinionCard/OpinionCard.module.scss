@@ -27,7 +27,7 @@ $transition-time: 0.4s;
     opacity: 1;
     transform: translateY(0) scale(1);
 
-    &.prev {
+    &.left {
       animation-name: activeFadeIn;
       animation-duration: $transition-time;
       z-index: 5;

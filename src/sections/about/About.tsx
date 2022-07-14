@@ -38,7 +38,7 @@ const About = () => {
         {cardsContent.map((card, index) => {
           return (
             <AboutCard
-              key={index}
+              key={`about-card-${index}`}
               headingText={card.headingText}
               paragraphText={card.paragraphText}
             />

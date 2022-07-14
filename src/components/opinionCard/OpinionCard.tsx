@@ -1,7 +1,7 @@
 import styles from "./OpinionCard.module.scss";
-import quote from "img/quote.svg";
 import React from "react";
 import classNames from "classnames";
+import { Quote } from "img/Quote";
 
 interface IOpinionCard {
   author: string;
@@ -31,7 +31,14 @@ const OpinionCard: React.FC<IOpinionCard> = ({
   return (
     <div className={cardClasses}>
       <div className={styles.opinion}>
-        <img src={quote} alt="" />
+        <Quote
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "10%",
+            transform: "translate(-50%, -10%)",
+          }}
+        />
         <p className={`grey_paragraph ${styles.content}`}>{content}</p>
         <p className={styles.author}>{author}</p>
         <p className={styles.author_age}>{age}</p>

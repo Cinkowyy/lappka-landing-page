@@ -69,7 +69,7 @@ const Aspects = () => {
         {aspectData.map((aspect, index) => {
           return (
             <AspectCard
-              key={index}
+              key={`aspect-card-${index}`}
               icon={aspect.icon}
               paragraphText={aspect.paragraphText}
             />

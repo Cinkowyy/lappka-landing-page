@@ -1,6 +1,7 @@
 import styles from "./Slider.module.scss";
 import OpinionCard from "components/opinionCard/OpinionCard";
 import { useState } from "react";
+import classNames from "classnames";
 
 interface IOpinionCard {
   author: string;
@@ -68,13 +69,25 @@ const Slider = () => {
     setCurrentCard((prevCard) => prevCard - 1);
   };
 
+  let leftArrowClasses = classNames({
+    [styles.arrow]: true,
+    [styles.arrow_left]: true,
+    [styles.active_arrow]: currentCard > 0 ? true : false,
+  });
+
+  let rightArrowClasses = classNames({
+    [styles.arrow]: true,
+    [styles.arrow_right]: true,
+    [styles.active_arrow]: currentCard < dataLength - 1 ? true : false,
+  });
+
   return (
     <div className={styles.slider}>
       <div className={styles.opinions_container}>
         {opinionsData.map((opinion, index) => {
           return (
             <OpinionCard
-              key={index}
+              key={`opinion-${index}`}
               content={opinion.content}
               author={opinion.author}
               age={opinion.age}
@@ -85,19 +98,11 @@ const Slider = () => {
         })}
       </div>
       <div className={styles.arrows}>
-        <button onClick={() => handlePrevCard()}>
-          <div
-            className={`${styles.arrow} ${styles.arrow_left} ${
-              currentCard > 0 ? styles.active_arrow : null
-            }`}
-          ></div>
+        <button onClick={handlePrevCard}>
+          <div className={leftArrowClasses}></div>
         </button>
-        <button onClick={() => handleNextCard()}>
-          <div
-            className={`${styles.arrow} ${styles.arrow_right} ${
-              currentCard < dataLength - 1 ? styles.active_arrow : null
-            }`}
-          ></div>
+        <button onClick={handleNextCard}>
+          <div className={rightArrowClasses}></div>
         </button>
       </div>
     </div>

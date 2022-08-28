@@ -4,6 +4,10 @@
   width: 100%;
   display: flex;
 }
+.logo {
+  height: 3rem;
+  margin-bottom: .5rem;
+}
 
 //Hero Content Section
 
@@ -79,7 +83,7 @@
 
 @media screen and (max-width: 1200px) {
   .logo {
-    width: 60%;
+    height: 2.5rem;
   }
 }
 
@@ -109,6 +113,11 @@
 }
 
 @media screen and (max-width: 840px) {
+
+  .logo {
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
   .hero_content {
     padding-top: 1.4rem;
 
@@ -120,6 +129,11 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .logo {
+    height: 2.75rem;
+    margin-bottom: .5rem;
+  }
   .hero_container {
     flex-direction: column;
     row-gap: 3.5rem;
@@ -179,6 +193,10 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .logo {
+    height: 2.25rem;
+  }
   .hero_container {
     padding-top: 1.6rem;
   }

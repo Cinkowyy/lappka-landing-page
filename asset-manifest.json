@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/lappka-landing-page/static/css/main.50c03918.css",
+    "main.js": "/lappka-landing-page/static/js/main.980ab4a8.js",
+    "static/js/787.ceec43be.chunk.js": "/lappka-landing-page/static/js/787.ceec43be.chunk.js",
+    "static/media/phones.png": "/lappka-landing-page/static/media/phones.c8277f10534012d8f437.png",
+    "static/media/avatar_4.png": "/lappka-landing-page/static/media/avatar_4.2fef7922adf5771ab41b.png",
+    "static/media/avatar_3.png": "/lappka-landing-page/static/media/avatar_3.ae1d8deb7974412f3c08.png",
+    "static/media/hero-phone-home.png": "/lappka-landing-page/static/media/hero-phone-home.1fc1f7a89ff90eeca782.png",
+    "static/media/hero-phone-menu.png": "/lappka-landing-page/static/media/hero-phone-menu.5b620f7e182eb0aa8e03.png",
+    "static/media/safety-ring-icon.svg": "/lappka-landing-page/static/media/safety-ring-icon.606dc9571da27ed9f9de060073dd19a8.svg",
+    "static/media/avatar_1.png": "/lappka-landing-page/static/media/avatar_1.6ded7ed8d767bf53d66b.png",
+    "static/media/avatar_2.png": "/lappka-landing-page/static/media/avatar_2.82424a9789b81aea0829.png",
+    "static/media/pet-house-icon.svg": "/lappka-landing-page/static/media/pet-house-icon.027e61fb2e79dc044dd1aacc4217e539.svg",
+    "static/media/magnifier-icon.svg": "/lappka-landing-page/static/media/magnifier-icon.9927a9cf1cc4745f358a3f8efd170ec2.svg",
+    "static/media/location-icon.svg": "/lappka-landing-page/static/media/location-icon.523038f0db3e9ae8f92b71add2b9c7ff.svg",
+    "static/media/heart-icon.svg": "/lappka-landing-page/static/media/heart-icon.312fcbebb061eef56b252a7e19b0920c.svg",
+    "static/media/eye-icon.svg": "/lappka-landing-page/static/media/eye-icon.353fe5d59d8310a297574439b37d28f2.svg",
+    "static/media/empty-heart-icon.svg": "/lappka-landing-page/static/media/empty-heart-icon.e858c9212b03f28b4ad4eae3d6c162dd.svg",
+    "static/media/hero-phone-pet.png": "/lappka-landing-page/static/media/hero-phone-pet.64e2f42f89a15d0d2609.png",
+    "static/media/share-icon.svg": "/lappka-landing-page/static/media/share-icon.3dd00cc824b0f3e5f3703ff62a8058fa.svg",
+    "static/media/logo.svg": "/lappka-landing-page/static/media/logo.22cd331ec64edfcf85f0e7efa9148024.svg",
+    "static/media/apple-icon.svg": "/lappka-landing-page/static/media/apple-icon.ddb133ee636107ef8835d64c952d85c7.svg",
+    "static/media/google-icon.svg": "/lappka-landing-page/static/media/google-icon.1a10900fac72809834b341d7db4276c8.svg",
+    "index.html": "/lappka-landing-page/index.html",
+    "static/media/checkbox-circle-icon.svg": "/lappka-landing-page/static/media/checkbox-circle-icon.ef6e5c0ae597fc9a6627.svg",
+    "static/media/background-shape.svg": "/lappka-landing-page/static/media/background-shape.b8de4f1ff818d8faa62f.svg",
+    "main.50c03918.css.map": "/lappka-landing-page/static/css/main.50c03918.css.map",
+    "main.980ab4a8.js.map": "/lappka-landing-page/static/js/main.980ab4a8.js.map",
+    "787.ceec43be.chunk.js.map": "/lappka-landing-page/static/js/787.ceec43be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50c03918.css",
+    "static/js/main.980ab4a8.js"
+  ]
+}
